@@ -5,9 +5,9 @@ function m12=corr(G1, G2)
     M1 = G1'*G1;
     M2 = G2'*G2;
 
-    delta12 = GetDeltaR(M12)
-    delta1 = GetDeltaR(M1)
-    delta2 = GetDeltaR(M2)
+    delta12 = GetDeltaR(M12);
+    delta1 = GetDeltaR(M1);
+    delta2 = GetDeltaR(M2);
 
     m12 = delta12 / (min(delta1, delta2) + epsilon);
 end
