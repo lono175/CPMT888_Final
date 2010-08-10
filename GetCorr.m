@@ -1,5 +1,5 @@
 function m12=corr(G1, G2)
-    epsilon = 0.000001;
+    epsilon = 0.000000001;
     G = [G1;G2];
     M12 = G'*G;
     M1 = G1'*G1;
